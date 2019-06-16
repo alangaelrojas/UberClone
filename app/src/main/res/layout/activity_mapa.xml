@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:id="@+id/layout_panel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+        
+        <EditText
+            android:id="@+id/edtPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Dirección de destino:"
+            android:layout_margin="10dp"/>
+        <!--
+        <Button
+            android:id="@+id/btnGo"
+            android:layout_weight="7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IR"
+            android:layout_gravity="center_vertical"/>
+
+        -->
+        
+    </LinearLayout>
+
+    <fragment
+        android:layout_below="@+id/layout_panel"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapaActivity" >
+
+        <android.support.v7.widget.CardView
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.github.glomadrian.materialanimatedswitch.MaterialAnimatedSwitch
+                    android:id="@+id/location_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    app:base_release_color="@color/baseReleaseColor"
+                    app:base_press_color="@color/basePressColor"
+                    app:ball_release_color="@color/ballReleaseColor"
+                    app:ball_press_color="@android:color/white"/>
+                
+                <Button
+                    android:id="@+id/btnfindUser"
+                    android:layout_weight="7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Buscar usuario"
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </fragment>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">545991284074-b400t8ejitqpvcm52pq531gv2r9fbs13.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://uberclone-6fae0.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">545991284074</string>
+    <string name="google_api_key" translatable="false">AIzaSyDZ0zlzWrn1_rbD43zfEjF6zl9v0xA5_Yk</string>
+    <string name="google_app_id" translatable="false">1:545991284074:android:61bf6a959a0e838b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDZ0zlzWrn1_rbD43zfEjF6zl9v0xA5_Yk</string>
+    <string name="google_storage_bucket" translatable="false">uberclone-6fae0.appspot.com</string>
+    <string name="project_id" translatable="false">uberclone-6fae0</string>
+</resources>
